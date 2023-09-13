@@ -22,6 +22,9 @@ nav li a {
     color: aliceblue;
 
 }
+.ubiWsp {
+    margin-inline: 20px;
+}
 h1 {
     color: aliceblue;
     font-family: 'Libre Baskerville', serif;
@@ -49,8 +52,11 @@ h1 {
     border: 1px solid rgb(46, 32, 8);
     border-radius: 5px;
 }
+/* referencias*/
+
 /*sucursal*/
 .ubicacion {
+    height: 70vh;
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -64,6 +70,7 @@ h1 {
     background-size: cover;
 }
 .mapa {
+    border-radius: 10px;
     width: 440px;
     height: 300px;
 }
@@ -88,4 +95,68 @@ h1 {
 }
 .servIcon {
     text-align: center;
+}
+/*nosotros*/
+.nosotros {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+.reseña {
+    background-color: rgb(46, 32, 8);
+    padding: 50px;
+    text-align: center;
+    color: aliceblue;
+}
+.imgNosotros {
+    width: 100%;
+}
+/* accidente*/
+.accidente {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.autoImg {
+    width: 100%;
+    
+}
+.esp {
+    background-color: rgb(46, 32, 8);
+    padding: 80px;
+    text-align: center;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* contacto */
+.contactanos{
+    text-align: center;
+    background-color: bisque;
+    padding: 50px;
+}
+.tc {
+    margin-bottom: 50px;
+}
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    
+}
+.icono {
+    margin-bottom: 50px;
+}
+/* formulario */
+.infoCliente {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: bisque;
+}
+form {
+    padding: 50px;
+}
+.prefiere {
+    padding: 50px;
+
 }

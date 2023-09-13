@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Libre+Baskerville:wght@400;700&family=Rye&family=Tilt+Neon&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+}
+/* encabezado */
+body {
+    background-image: url(../img/encabezado.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    
+}
+nav {
+    background-color: rgba(46, 32, 8, 0.692);
+    color: aliceblue;
+    height: 13vh;
+}
+nav li a {
+    color: aliceblue;
+
+}
+h1 {
+    color: aliceblue;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 80px;
+    
+    
+}
+.ganar {
+    color: aliceblue;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 60px;
+    margin-bottom: 50px;
+
+}
+.face h1 {
+    margin-bottom: 100px;
+}
+.face .boton {
+    color: aliceblue;
+    background-color: rgb(102, 77, 33);
+    margin-bottom: 50px;
+    padding-inline: 25px;
+    padding-top: 10PX;
+    padding-bottom: 2px;
+    border: 1px solid rgb(46, 32, 8);
+    border-radius: 5px;
+}
+

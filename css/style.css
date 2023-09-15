@@ -11,6 +11,7 @@ body {
     background-image: url(../img/encabezado.jpg);
     background-repeat: no-repeat;
     background-size: 100vw;
+
     
 }
 nav {
@@ -42,6 +43,12 @@ h1 {
 .face h1 {
     margin-bottom: 100px;
 }
+.estudio {
+    animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: .5s;
+
+}
+
 .face .boton {
     color: aliceblue;
     background-color: rgb(102, 77, 33);
@@ -51,7 +58,13 @@ h1 {
     padding-bottom: 2px;
     border: 1px solid rgb(46, 32, 8);
     border-radius: 5px;
+    animation:pulsate-bck 3s ease-in-out infinite both;
+    animation-timing-function: ;
 }
+.titulo2 {
+    animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
+}
+
 /* referencias*/
 
 /*sucursal*/
@@ -149,14 +162,65 @@ h1 {
 }
 /* formulario */
 .infoCliente {
+    
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: bisque;
 }
 form {
-    padding: 50px;
+    padding: 100px;
+    padding-top: 30px;
 }
 .prefiere {
-    padding: 50px;
+    padding: 100px;
+    text-align: center;
 
 }
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+#comentario {
+    height: 100px ;
+}
+input {
+    border: 2px solid saddlebrown;
+    border-radius: 5px;
+    padding: 4px;
+    background-color: rgba(224, 187, 160, 0.459);
+
+}
+.enviar {
+    margin-top: 5px;
+    background-color: rgb(46, 32, 8);
+    color: aliceblue;
+    font-size: 20px;
+
+}
+footer {
+    width: 100%;
+    background-image: url(../img/encabezado.jpg);
+    
+}
+.fila {
+    padding: 20px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    gap: 100px;
+       
+}
+.ft {
+
+}
+
+
+
+
+
+
+@keyframes pulsate-bck{0%{transform:scale(1)}50%{transform:scale(.9)}100%{transform:scale(1)}}
+@keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+@keyframes focus-in-expand{0%{letter-spacing:-.5em;filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}

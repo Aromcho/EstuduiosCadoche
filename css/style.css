@@ -101,6 +101,16 @@ h1 {
     animation-delay: .3s;
 
 }
+/* mobil*/
+.dispMovil {
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+
+}
+.estudioMovil .titulo2 {
+    font-size: 0px;
+}
 
  
 /* referencias*/
@@ -202,7 +212,7 @@ h1 {
 .infoCliente {
     
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     background-color: bisque;
 }
 form {
@@ -265,42 +275,29 @@ footer {
     }
     nav {
         height: 70px;
-        position: absolute;
+        
     }
     .navbar-toggler {
         background-color: rgb(143, 86, 46);
     }
+    .desplegable {
+        background-color: rgb(143, 86, 46);
+        
+        
+        
+    }
     /*face*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
     .face {
+        
         width: 0px;
         
     }
     .dispMovil {
         width: 100%;
+        height: 100%;
+        font-size: 30px;
+        
         
     }
     .estudioMovil {
@@ -314,12 +311,17 @@ footer {
         padding: 40px;
         color: aliceblue;
         
+        
 
 
     }
     .tituloMovil {
         font-size: 30px;
         margin-bottom: 50px;
+        animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;
+        animation-delay: .2s;
+        position: relative;
+
         
     }
     .estudioMovil .boton {
@@ -337,43 +339,35 @@ footer {
     .estudioMovil .titulo2 {
         
         font-size: 18px;
+        animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
+        
 
     }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /*carucel*/
     
     /*sucursal*/
     .ubicacion {
-        
+        height: 60vh;
         display:grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    .sucursal1  {
-        
-        padding: 10px;
+    .sucursal2 {
+        padding: 30px;
+        padding-top: 10px;
+        text-align: center;
+        background-color: rgb(46, 32, 8);
+        color: aliceblue;
+    }
+    .mapa {
+        border-radius: 10px;
+        width: 100%;
+        height: 200px;
+                        
     }
     /*servicios*/
     .serv {
+        
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 4fr;
@@ -403,9 +397,26 @@ footer {
     }
     /*formulario*/
     .infoCliente {
+        height: 70vh;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+    .prefiere{
+        width: 100vw;
+        
+        padding: 10px;
+        text-align: center;
+        
+    }
+    form {
+        width: 100vw;
+        padding: 10px;
+        
+    }
+    .formulario {
+        width: 95vw;
+        padding: 0px;
     }
     /* footer */
     footer {

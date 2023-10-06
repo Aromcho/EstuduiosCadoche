@@ -51,6 +51,12 @@ nav li a {
     color: aliceblue;
 
 }
+/** hover del nav**/
+.desplegable a:hover {
+    background-color: rgba(46, 32, 8, 0.623);
+    border-radius: 10px;
+}
+/**/
 .ubiWsp {
     margin-inline: 20px;
 }
@@ -87,6 +93,13 @@ h1 {
     border: 1px solid rgb(46, 32, 8);
     border-radius: 15px;
     animation:pulsate-bck 3s ease-in-out infinite both;
+    
+}
+.face .boton:hover {
+    width: 270px;
+    animation: none;
+    
+    
 }
 .titulo2 {
     animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;

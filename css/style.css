@@ -27,30 +27,42 @@
 
 
 }
-
+.referencia {
+    position: relative;
+    top: -7vh;
+}
 
 /* encabezado */
 body {
-    background-color: rgb(46, 32, 8);
-    background-repeat: no-repeat;
-    background-size: 100vw;
-
-    
-}
-nav {
+    background-color:rgb(46, 32, 8) ;
+  }
+.navbar {
     background-image: url(../img/encabezado.jpg);
     background-repeat: no-repeat;
     background-size: 100vw;
     color: aliceblue;
     height: 13vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-image 0.5s ease;
 }
-.logoEC{
-    width:120px;
+
+.navbar-transparente {
+    background: rgba(49, 49, 49, 0);
+    backdrop-filter: none;
 }
+
+.logoEC {
+    width: 120px;
+}
+
 nav li a {
     color: aliceblue;
-
 }
+
 /** hover del nav**/
 .desplegable a:hover {
     background-color: rgba(46, 32, 8, 0.623);
@@ -63,19 +75,19 @@ nav li a {
 h1 {
     color: aliceblue;
     font-family: 'Libre Baskerville', serif;
-    font-size: 80px;
+    font-size: 10vh;
     
     
 }
 .ganar {
     color: aliceblue;
     font-family: 'Libre Baskerville', serif;
-    font-size: 60px;
+    font-size: 8vh;
     margin-bottom: 50px;
 
 }
 .face h1 {
-    margin-bottom: 100px;
+    margin-bottom: 10%;
 }
 .estudio {
     animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;
@@ -86,12 +98,11 @@ h1 {
 .face .boton {
     color: aliceblue;
     background-color: rgb(102, 77, 33);
-    margin-bottom: 50px;
-    padding-inline: 25px;
-    padding-top: 10PX;
-    padding-bottom: 2px;
+    margin-bottom: 5%;
+    padding-inline: 10px;
+    padding-top: 5px;
     border: 1px solid rgb(46, 32, 8);
-    border-radius: 15px;
+    border-radius: 5px;
     animation:pulsate-bck 3s ease-in-out infinite both;
     
 }
@@ -103,6 +114,7 @@ h1 {
 }
 .titulo2 {
     animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
+    font-size:4vh ;
 }
 .ganar  {
     animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
@@ -112,8 +124,24 @@ h1 {
 .atnP {
     animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
     animation-delay: .3s;
+    font-size: 10vh;
 
 }
+.face {
+    padding-top: 13vh;
+    height: 90vh;
+    position: relative;
+    top: -13vh;
+    left: 0;
+    z-index: 0;
+}
+.referencia {
+    position: relative;
+    left: 0;
+
+}
+
+
 /* mobil*/
 .dispMovil {
     width: 0px;
@@ -294,6 +322,7 @@ footer {
         
     }
     .navbar {
+
         padding: 0;
     }
     .navbar-toggler {
@@ -307,7 +336,9 @@ footer {
     
     .face {
         position: relative;
+        top: -13vh;
         width: 0px;
+        height: 0;
         
     }
     .dispMovil {
@@ -367,7 +398,7 @@ footer {
     
     /*sucursal*/
     .ubicacion {
-        height: 60vh;
+        height: 80vh;
         display:grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -418,25 +449,25 @@ footer {
     }
     /*formulario*/
     .infoCliente {
-        height: 70vh;
+        width: 95vw;
+        height: 90vh;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
     .prefiere{
-        width: 100vw;
-        
-        padding: 10px;
+        width: 95vw;
+        padding: 10%;
         text-align: center;
         
     }
     form {
-        width: 100vw;
-        padding: 10px;
+        width: 95vw;
+        padding: 3%;
         
     }
     .formulario {
-        width: 95vw;
+        width: 90vw;
         padding: 0px;
     }
     /* footer */

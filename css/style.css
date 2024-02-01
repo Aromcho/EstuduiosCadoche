@@ -70,7 +70,7 @@ nav li a {
 }
 /**/
 .ubiWsp {
-    margin-inline: 20px;
+    width: 10vw;
 }
 h1 {
     color: aliceblue;
@@ -107,7 +107,7 @@ h1 {
     
 }
 .face .boton:hover {
-    width: 270px;
+    box-shadow: 1px 1px 20px black;
     animation: none;
     
     
@@ -129,6 +129,7 @@ h1 {
 }
 .face {
     padding-top: 13vh;
+    margin-bottom: 1%;
     height: 90vh;
     position: relative;
     top: -13vh;
@@ -136,6 +137,7 @@ h1 {
     z-index: 0;
 }
 .referencia {
+    height: 45vh;
     position: relative;
     left: 0;
 
@@ -206,15 +208,17 @@ h1 {
 }
 .reseña {
     background-color: rgb(46, 32, 8);
-    padding: 50px;
+    padding: 2%;
     text-align: center;
     color: aliceblue;
 }
 .imgNosotros {
     width: 100%;
+    height: 100%;
 }
 /* accidente*/
 .accidente {
+    width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -241,28 +245,29 @@ h1 {
     align-items: center;
 }
 .tc {
-    margin-bottom: 10%;
+    padding: 2%;
 }
 .contacto {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
     
 }
 .icono {
     margin-bottom: 10%;
 }
 .cont1 {
-    width: 95vw;
+    width: 30vw;
 }
 .cont2 {
-    width: 95vw;
+    width: 30vw;
 }
 .cont3 {
-    width: 95vw;
+    width: 30vw;
 }
 .correo-electronico {
     font-size: 120%;
+
 }
 /* formulario */
 .infoCliente {
@@ -348,6 +353,9 @@ footer {
         background-color: rgb(143, 86, 46);
         text-align: center;
     }
+    .ubiWsp {
+        width: 100%;
+    }
     /*face*/
     
     .face {
@@ -413,7 +421,13 @@ footer {
 
     }
     /*carucel*/
+    /*referencias*/
+    .referencia {
+        height: 35vh;
+        position: relative;
+        left: 0;
     
+    }
     /*sucursal*/
     .ubicacion {
         height: 80vh;
@@ -459,15 +473,26 @@ footer {
         text-align: center;
         
     }
+    .cont1 {
+        width: 90vw;
+    }
+    .cont2 {
+        width: 90vw;
+    }
+    .cont3 {
+        width: 90vw;
+    }
     /* accidente */
     .accidente {
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
+    
     /*formulario*/
     .infoCliente {
-        width: 95vw;
+        width: 100%;
         height: 90vh;
         display: grid;
         grid-template-columns: 1fr;
